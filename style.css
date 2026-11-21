@@ -1,0 +1,449 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    background: #f5f5f5;
+}
+
+ 
+h1, h2, h3, h4 {
+    font-family: "Fredoka", sans-serif;
+}
+
+
+header {
+    background: #6c5ce7;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    background: #ece8ff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    margin: 0 0 15px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #2d3436;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #636e72;
+    margin: 0 0 25px;
+}
+
+.boton {
+    display: inline-block;
+    background: #6c5ce7;
+    color: white;
+    text-decoration: none;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+.boton:hover {
+    background: #5a4bd1;
+}
+
+
+.seccion {
+    padding: 70px 20px;
+}
+
+.fondo-claro {
+    background: white;
+}
+
+.titulo {
+    text-align: center;
+    margin: 0 0 45px;
+    font-size: 44px;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    width: 260px;
+    padding: 25px 20px;
+    border-radius: 14px;
+    border: 2px solid #e0dcff;
+    text-align: center;
+}
+
+.card:hover {
+    border-color: #6c5ce7;
+}
+
+.card-img {
+    width: 170px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+.card h3 i {
+    color: #6c5ce7;
+    margin-right: 6px;
+}
+
+.card p {
+    color: #636e72;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #6c5ce7;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+
+.pasos {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.paso {
+    width: 250px;
+    text-align: center;
+}
+
+.numero {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+    background: #6c5ce7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numero i {
+    font-size: 38px;
+    color: white;
+}
+
+.paso h3 {
+    margin: 0 0 8px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+.paso p {
+    margin: 0;
+    color: #636e72;
+    line-height: 1.5;
+}
+
+
+.nosotros {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nosotros p {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #636e72;
+}
+
+.nosotros ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0;
+}
+
+.nosotros li {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.nosotros li i {
+    color: #6c5ce7;
+    margin-right: 8px;
+}
+
+
+.opinion {
+    background: #f5f5f5;
+    width: 300px;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.opinion i {
+    font-size: 30px;
+    color: #6c5ce7;
+}
+
+.opinion p {
+    color: #636e72;
+    line-height: 1.5;
+    margin: 12px 0;
+}
+
+.opinion h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    border: 2px solid #e0dcff;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+    color: #2d3436;
+}
+
+.formulario label i {
+    color: #6c5ce7;
+    margin-right: 5px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 2px solid #e0dcff;
+    border-radius: 8px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #6c5ce7;
+}
+
+.formulario button {
+    width: 100%;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background: #5a4bd1;
+}
+
+
+footer {
+    background: #2d3436;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h3 {
+    margin: 0 0 12px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+footer h3 i {
+    color: #fdcb6e;
+}
+
+.social a {
+    color: white;
+    font-size: 28px;
+    margin: 0 10px;
+}
+
+.social a:hover {
+    color: #a29bfe;
+}
+
+footer p {
+    margin: 15px 0 0;
+    color: #b2bec3;
+    font-size: 15px;
+}
+
+
+@media (max-width: 700px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    header nav a {
+        margin: 0 8px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .titulo {
+        font-size: 32px;
+    }
+}
+
+/* Ajustes adicionales para celulares y tablets */
+.boton-menu {
+    display: none;
+    border: 0;
+    border-radius: 22px;
+    padding: 10px 16px;
+    background: #5a4bd1;
+    color: #fff;
+    font: 700 16px "Nunito", sans-serif;
+    cursor: pointer;
+}
+
+.estado-formulario {
+    display: none;
+    margin: 0 0 16px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: #ece8ff;
+    color: #2d3436;
+    line-height: 1.45;
+}
+
+.estado-formulario.visible { display: block; }
+
+@media (max-width: 700px) {
+    header {
+        position: relative;
+        flex-direction: column;
+        padding: 16px;
+        gap: 14px;
+    }
+
+    header h1 { font-size: clamp(24px, 7vw, 30px); }
+
+    .boton-menu { display: inline-block; }
+
+    header nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    header nav.menu-abierto { display: flex; }
+
+    header nav a {
+        display: block;
+        margin: 0;
+        padding: 11px 8px;
+        border-top: 1px solid rgba(255,255,255,.2);
+        font-size: 16px;
+    }
+
+    .hero { padding: 58px 18px; }
+    .hero h2 { font-size: clamp(32px, 9vw, 40px); }
+    .hero p { font-size: 17px; }
+    .seccion { padding: 48px 16px; }
+    .titulo { font-size: clamp(28px, 8vw, 34px); margin-bottom: 30px; }
+
+    .cards { gap: 16px; }
+    .card, .opinion { width: 100%; max-width: 380px; }
+    .card-img { max-width: 100%; }
+    .pasos { gap: 30px; }
+    .paso { width: 100%; max-width: 300px; }
+
+    .formulario { width: 100%; padding: 22px 16px; }
+    .formulario input, .formulario textarea { font-size: 16px; }
+    footer { padding: 30px 16px; }
+}
+
+@media (max-width: 360px) {
+    header h1 { font-size: 23px; }
+    .boton { font-size: 18px; padding: 11px 24px; }
+}
